@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific World</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+<body>
+    <!-- Фиксированная шапка -->
+    <header>
+        <div class="logo">🌌 Scientific World</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#topics">Topics</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главный блок с параллакс-эффектом -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Welcome to the World of Science</h1>
+            <p>Unleash the power of knowledge and exploration.</p>
+            <a href="#about" class="hero-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- О науке -->
+        <section id="about" class="section">
+            <h2>About Science</h2>
+            <p>Science is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe.</p>
+        </section>
+
+        <!-- Темы -->
+        <section id="topics" class="section">
+            <h2>Explore Topics</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Quantum Physics</h3>
+                    <p>Discover the mysteries of the subatomic world.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Molecular Biology</h3>
+                    <p>Unlock the secrets of life on a cellular level.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Nanotechnology</h3>
+                    <p>Explore innovation at the nanoscale.</p>
+                    <a href="#">Read More</a>
+                </div>
+                <div class="card">
+                    <h3>Artificial Intelligence</h3>
+                    <p>Learn about machines that think and learn.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Контакты -->
+    <footer id="contact">
+        <p>&copy; 2024 Scientific World. All Rights Reserved.</p>
+        <p>Designed by <strong>Science Enthusiasts</strong></p>
+    </footer>
+</body>
+</html>
